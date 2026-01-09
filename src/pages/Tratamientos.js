@@ -348,6 +348,7 @@ Puede aplicarse en rostro, brazos, abdomen y glúteos. Se recomiendan 3 sesiones
 const Tratamientos = () => {
   const [categoriaActiva, setCategoriaActiva] = useState(categoriasData[0]);
   const [tratamientoActivo, setTratamientoActivo] = useState(categoriasData[0].tratamientos[0]);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   // Scroll to top on mount
   useEffect(() => {
@@ -361,13 +362,27 @@ const Tratamientos = () => {
     setTratamientoActivo(categoria.tratamientos[0]);
   };
 
+  const handleTratamientoClick = (tratamiento) => {
+    setTratamientoActivo(tratamiento);
+    setSidebarOpen(false); // Cerrar sidebar en mobile al seleccionar tratamiento
+  };
+
   return (
     <>
       <Header />
       <main className="tratamientos-page">
         <div className="tratamientos-layout">
+          {/* Mobile Toggle Button */}
+          <button 
+            className={`tratamientos-mobile-toggle ${sidebarOpen ? 'active' : ''}`}
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+          >
+            <span>Seleccionar tratamiento</span>
+            <i className="fas fa-chevron-down"></i>
+          </button>
+          
           {/* Sidebar */}
-          <aside className="tratamientos-sidebar">
+          <aside className={`tratamientos-sidebar ${sidebarOpen ? 'open' : ''}`}>
             <h2>Tratamientos</h2>
             <nav className="tratamientos-nav">
               {categoriasData.map((categoria) => (
@@ -384,7 +399,7 @@ const Tratamientos = () => {
                         <button
                           key={tratamiento.id}
                           className={`tratamientos-nav-item ${tratamientoActivo.id === tratamiento.id ? 'active' : ''}`}
-                          onClick={() => setTratamientoActivo(tratamiento)}
+                          onClick={() => handleTratamientoClick(tratamiento)}
                         >
                           {tratamiento.nombre}
                         </button>

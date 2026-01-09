@@ -3,16 +3,21 @@
   min-height: calc(100vh - 70px);
   background-color: #f9f8f7;
   padding: 3rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .cursos-container {
   max-width: 800px;
+  width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .cursos-container h1 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 3rem;
+  font-size: clamp(2rem, 6vw, 3rem);
   font-weight: 600;
   color: #0c0c0c;
   margin-bottom: 2rem;
@@ -25,18 +30,19 @@
   padding: 2rem;
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
 }
 
 .cursos-section h2 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.8rem;
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
   font-weight: 600;
   color: #0c0c0c;
   margin-bottom: 1rem;
 }
 
 .cursos-section p {
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
   line-height: 1.8;
   color: #444;
 }
@@ -56,25 +62,39 @@
   color: #0c0c0c;
 }
 
+/* Tablets */
 @media (max-width: 768px) {
   .cursos-page {
     padding: 2rem 1rem;
   }
 
   .cursos-container h1 {
-    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
   }
 
   .cursos-section {
     padding: 1.5rem;
-  }
-
-  .cursos-section h2 {
-    font-size: 1.5rem;
-  }
-
-  .cursos-section p {
-    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
   }
 }
 
+/* Mobile */
+@media (max-width: 480px) {
+  .cursos-page {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .cursos-container h1 {
+    margin-bottom: 1.25rem;
+  }
+
+  .cursos-section {
+    padding: 1.25rem;
+    border-radius: 10px;
+  }
+
+  .cursos-back {
+    font-size: 1rem;
+  }
+}

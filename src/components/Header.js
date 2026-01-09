@@ -83,7 +83,7 @@ const Header = () => {
               </button>
             </li>
             <li>
-              <button className="nav-link" onClick={() => goToSection('speaker')}>
+              <button className="nav-link" onClick={() => goToPage('/speaker')}>
                 Speaker
               </button>
             </li>
@@ -136,7 +136,7 @@ const Header = () => {
             </button>
           </li>
           <li>
-            <button className="nav-mobile-link" onClick={() => goToSection('speaker')}>
+            <button className="nav-mobile-link" onClick={() => goToPage('/speaker')}>
               Speaker
             </button>
           </li>

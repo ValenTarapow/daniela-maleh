@@ -2,18 +2,22 @@
 .tratamientos-page {
   min-height: calc(100vh - 70px);
   background-color: #f9f8f7;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .tratamientos-layout {
   display: flex;
   min-height: calc(100vh - 70px);
+  width: 100%;
 }
 
 /* Sidebar */
 .tratamientos-sidebar {
-  width: 300px;
+  width: 280px;
+  min-width: 280px;
   background-color: #ffffff;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1rem;
   border-right: 1px solid #E9DBD8;
   display: flex;
   flex-direction: column;
@@ -21,15 +25,16 @@
   top: 70px;
   height: calc(100vh - 70px);
   overflow-y: auto;
+  box-sizing: border-box;
 }
 
 .tratamientos-sidebar h2 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: #0c0c0c;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
   border-bottom: 2px solid #E9DBD8;
 }
 
@@ -48,9 +53,9 @@
   background: none;
   border: none;
   text-align: left;
-  padding: 0.75rem 1rem;
+  padding: 0.6rem 0.75rem;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #0c0c0c;
   cursor: pointer;
@@ -72,20 +77,20 @@
 .tratamientos-subnav {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.2rem;
   margin-top: 0.25rem;
-  padding-left: 0.75rem;
+  padding-left: 0.5rem;
   border-left: 2px solid #E9DBD8;
-  margin-left: 1rem;
+  margin-left: 0.75rem;
 }
 
 .tratamientos-nav-item {
   background: none;
   border: none;
   text-align: left;
-  padding: 0.5rem 0.75rem;
+  padding: 0.4rem 0.6rem;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
   color: #666;
   cursor: pointer;
@@ -106,7 +111,7 @@
 
 .tratamientos-back {
   margin-top: auto;
-  padding-top: 1.5rem;
+  padding-top: 1.25rem;
   border-top: 1px solid #E9DBD8;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1rem;
@@ -124,6 +129,8 @@
 .tratamientos-content {
   flex: 1;
   padding: 2rem;
+  max-width: calc(100% - 280px);
+  box-sizing: border-box;
 }
 
 .tratamientos-content-header {
@@ -133,7 +140,7 @@
 .tratamientos-categoria-label {
   display: inline-block;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: #A68B82;
   text-transform: uppercase;
@@ -143,7 +150,7 @@
 
 .tratamientos-content h1 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 600;
   color: #0c0c0c;
   margin-bottom: 0;
@@ -156,21 +163,23 @@
 
 .tratamientos-main {
   flex: 1;
+  min-width: 0;
 }
 
 .tratamientos-descripcion {
   font-size: 0.9rem;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #444;
   margin-bottom: 1.5rem;
   white-space: pre-line;
 }
 
 .tratamientos-imagen {
-  max-width: 280px;
+  max-width: 250px;
   border-radius: 10px;
   overflow: hidden;
   margin: 0 auto;
+  flex-shrink: 0;
 }
 
 .tratamientos-imagen img {
@@ -185,11 +194,11 @@
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem auto 0;
-  padding: 0.75rem 1.5rem;
+  padding: 0.7rem 1.25rem;
   background-color: #25D366;
   color: #ffffff;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   text-decoration: none;
   border-radius: 30px;
@@ -203,43 +212,46 @@
 }
 
 .tratamientos-consulta-btn i {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 /* Info Sidebar */
 .tratamientos-info-sidebar {
-  width: 200px;
+  width: 180px;
+  min-width: 180px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.5rem;
 }
 
 .tratamientos-info-item {
   display: flex;
   align-items: flex-start;
-  gap: 0.75rem;
+  gap: 0.6rem;
   background-color: #ffffff;
-  padding: 0.85rem;
+  padding: 0.75rem;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   border: 1px solid #E9DBD8;
 }
 
 .tratamientos-info-item i {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #A68B82;
-  margin-top: 0.15rem;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
 }
 
 .tratamientos-info-item div {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.2rem;
+  min-width: 0;
 }
 
 .tratamientos-info-item .info-label {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   color: #888;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -247,53 +259,128 @@
 
 .tratamientos-info-item .info-value {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: #0c0c0c;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
+/* Mobile toggle button */
+.tratamientos-mobile-toggle {
+  display: none;
+  width: 100%;
+  padding: 1rem;
+  background-color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #E9DBD8;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0c0c0c;
+  cursor: pointer;
+  text-align: left;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+}
+
+.tratamientos-mobile-toggle i {
+  transition: transform 0.3s ease;
+}
+
+.tratamientos-mobile-toggle.active i {
+  transform: rotate(180deg);
+}
+
+/* Responsive - Large tablets */
+@media (max-width: 1024px) {
   .tratamientos-sidebar {
-    width: 260px;
+    width: 240px;
+    min-width: 240px;
+    padding: 1.25rem 1rem;
+  }
+  
+  .tratamientos-content {
+    max-width: calc(100% - 240px);
+    padding: 1.5rem;
+  }
+  
+  .tratamientos-info-sidebar {
+    width: 160px;
+    min-width: 160px;
   }
 }
 
+/* Responsive - Tablets */
+@media (max-width: 900px) {
+  .tratamientos-content-body {
+    flex-direction: column;
+  }
+  
+  .tratamientos-info-sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .tratamientos-info-item {
+    flex: 1 1 calc(50% - 0.25rem);
+    min-width: 140px;
+  }
+}
+
+/* Responsive - Mobile */
 @media (max-width: 768px) {
   .tratamientos-layout {
     flex-direction: column;
   }
 
+  .tratamientos-mobile-toggle {
+    display: flex;
+  }
+
   .tratamientos-sidebar {
     width: 100%;
+    min-width: 100%;
     position: relative;
     top: 0;
     height: auto;
-    max-height: 50vh;
+    max-height: 0;
+    overflow: hidden;
     border-right: none;
+    border-bottom: none;
+    padding: 0 1rem;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    z-index: 50;
+  }
+  
+  .tratamientos-sidebar.open {
+    max-height: 60vh;
+    padding: 1rem;
     border-bottom: 1px solid #E9DBD8;
-    padding: 1.5rem 1rem;
+    overflow-y: auto;
   }
 
   .tratamientos-sidebar h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
   }
 
   .categoria-title {
-    font-size: 1.05rem;
-    padding: 0.6rem 0.75rem;
+    font-size: 1rem;
+    padding: 0.5rem 0.6rem;
   }
 
   .tratamientos-nav-item {
     font-size: 0.9rem;
-    padding: 0.4rem 0.6rem;
+    padding: 0.35rem 0.5rem;
   }
 
   .tratamientos-subnav {
-    margin-left: 0.75rem;
-    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    padding-left: 0.4rem;
   }
 
   .tratamientos-back {
@@ -301,30 +388,70 @@
   }
 
   .tratamientos-content {
-    padding: 2rem 1rem;
+    max-width: 100%;
+    padding: 1.5rem 1rem;
   }
 
   .tratamientos-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .tratamientos-content-body {
-    flex-direction: column;
-  }
-
-  .tratamientos-info-sidebar {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .tratamientos-info-item {
-    flex: 1 1 calc(50% - 0.5rem);
-    min-width: 150px;
-    padding: 1rem;
+    font-size: 1.6rem;
   }
 
   .tratamientos-descripcion {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .tratamientos-imagen {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+
+  .tratamientos-info-item {
+    flex: 1 1 calc(50% - 0.25rem);
+    min-width: 130px;
+    padding: 0.7rem;
+  }
+  
+  .tratamientos-info-item .info-label {
+    font-size: 0.6rem;
+  }
+  
+  .tratamientos-info-item .info-value {
+    font-size: 0.8rem;
+  }
+}
+
+/* Responsive - Small Mobile */
+@media (max-width: 480px) {
+  .tratamientos-content {
+    padding: 1rem 0.75rem;
+  }
+
+  .tratamientos-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .tratamientos-categoria-label {
+    font-size: 0.75rem;
+  }
+
+  .tratamientos-descripcion {
+    font-size: 0.9rem;
+  }
+
+  .tratamientos-info-sidebar {
+    flex-direction: column;
+  }
+
+  .tratamientos-info-item {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .tratamientos-consulta-btn {
+    padding: 0.65rem 1rem;
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: 250px;
   }
 }
