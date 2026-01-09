@@ -614,6 +614,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   background-color: #A68B82;
   color: #ffffff;
   border: none;
@@ -622,6 +623,14 @@
 .equipo-btn:hover {
   background-color: #8A706A;
   transform: translateY(-2px);
+}
+
+.equipo-btn i {
+  transition: transform 0.3s ease;
+}
+
+.equipo-btn:hover i {
+  transform: translateX(4px);
 }
 
 @media (max-width: 768px) {
@@ -637,7 +646,7 @@
 /* Section 5 - Speaker */
 .section-5 {
   background: 
-    radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.15) 100%),
+    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
     url('./assets/speaker-bg.png');
   background-size: cover;
   background-position: center;

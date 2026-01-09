@@ -173,7 +173,7 @@ function HomePage() {
               rel="noopener noreferrer"
               className="equipo-btn"
             >
-              Conocer el equipo
+              Ir a Due Derma <i className="fas fa-arrow-right"></i>
             </a>
           </div>
         </section>
