@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/daniela-maleh/static/css/main.20fdd9fc.css",
-    "main.js": "/daniela-maleh/static/js/main.41d8a994.js",
+    "main.js": "/daniela-maleh/static/js/main.eeedc948.js",
     "static/js/453.5f61f63a.chunk.js": "/daniela-maleh/static/js/453.5f61f63a.chunk.js",
     "static/media/tratamientos-bg.png": "/daniela-maleh/static/media/tratamientos-bg.a2a7dcef56c4bbe14707.png",
     "static/media/speaker-bg.png": "/daniela-maleh/static/media/speaker-bg.73ca8094a78da11b0afe.png",
     "static/media/5.jpg": "/daniela-maleh/static/media/5.757356888c32e704ab0a.jpg",
     "static/media/fa-solid-900.woff2": "/daniela-maleh/static/media/fa-solid-900.8ae0d37556ff1e685de2.woff2",
     "static/media/fa-brands-400.woff2": "/daniela-maleh/static/media/fa-brands-400.1c5c7716b05754cb4eab.woff2",
+    "static/media/logo.png": "/daniela-maleh/static/media/logo.9749d4037e45710ddad1.png",
     "static/media/5 (3).jpg": "/daniela-maleh/static/media/5 (3).ee47f5cf526e4f4f72d5.jpg",
     "static/media/istockphoto-2038457340-612x612 (1).jpg": "/daniela-maleh/static/media/istockphoto-2038457340-612x612 (1).dc31f781355196c4a6f5.jpg",
     "static/media/fa-regular-400.woff2": "/daniela-maleh/static/media/fa-regular-400.6f05ca9ab7b5345dbc07.woff2",
-    "static/media/logo.svg": "/daniela-maleh/static/media/logo.8775d842dd290c1908e5200906ba69ac.svg",
     "static/media/fa-v4compatibility.woff2": "/daniela-maleh/static/media/fa-v4compatibility.e4340c52a50e727c6afa.woff2",
     "index.html": "/daniela-maleh/index.html",
     "main.20fdd9fc.css.map": "/daniela-maleh/static/css/main.20fdd9fc.css.map",
-    "main.41d8a994.js.map": "/daniela-maleh/static/js/main.41d8a994.js.map",
+    "main.eeedc948.js.map": "/daniela-maleh/static/js/main.eeedc948.js.map",
     "453.5f61f63a.chunk.js.map": "/daniela-maleh/static/js/453.5f61f63a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.20fdd9fc.css",
-    "static/js/main.41d8a994.js"
+    "static/js/main.eeedc948.js"
   ]
 }
