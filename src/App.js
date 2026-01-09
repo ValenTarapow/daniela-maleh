@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -19,9 +20,37 @@ const calculateYears = () => {
   return years;
 };
 
+// Datos de las cards de Sobre mí
+const aboutCards = [
+  {
+    icon: 'fas fa-graduation-cap',
+    title: 'Formación',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+  },
+  {
+    icon: 'fas fa-heartbeat',
+    title: 'Enfoque médico',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+  },
+  {
+    icon: 'fas fa-star',
+    title: 'Qué me diferencia',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+  }
+];
+
 // Componente HomePage (página principal)
 function HomePage() {
   const yearsOfExperience = calculateYears();
+  const [aboutCardIndex, setAboutCardIndex] = useState(0);
+
+  const nextAboutCard = () => {
+    setAboutCardIndex((prev) => (prev + 1) % aboutCards.length);
+  };
+
+  const prevAboutCard = () => {
+    setAboutCardIndex((prev) => (prev - 1 + aboutCards.length) % aboutCards.length);
+  };
 
   return (
     <>
@@ -53,30 +82,49 @@ function HomePage() {
           <div className="section-content about-me-content">
             <h1>Sobre mí</h1>
             
+            {/* Grid para desktop */}
             <div className="about-me-grid">
-              <div className="about-me-card">
-                <div className="about-me-icon">
-                  <i className="fas fa-graduation-cap"></i>
+              {aboutCards.map((card, index) => (
+                <div key={index} className="about-me-card">
+                  <div className="about-me-icon">
+                    <i className={card.icon}></i>
+                  </div>
+                  <h3>{card.title}</h3>
+                  <p>{card.description}</p>
                 </div>
-                <h3>Formación</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+              ))}
+            </div>
+
+            {/* Carrusel para móvil */}
+            <div className="about-me-carousel">
+              <button className="about-carousel-btn" onClick={prevAboutCard}>
+                <i className="fas fa-chevron-left"></i>
+              </button>
+              
+              <div className="about-carousel-wrapper">
+                <div className="about-me-card">
+                  <div className="about-me-icon">
+                    <i className={aboutCards[aboutCardIndex].icon}></i>
+                  </div>
+                  <h3>{aboutCards[aboutCardIndex].title}</h3>
+                  <p>{aboutCards[aboutCardIndex].description}</p>
+                </div>
               </div>
               
-              <div className="about-me-card">
-                <div className="about-me-icon">
-                  <i className="fas fa-heartbeat"></i>
-                </div>
-                <h3>Enfoque médico</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
-              </div>
-              
-              <div className="about-me-card">
-                <div className="about-me-icon">
-                  <i className="fas fa-star"></i>
-                </div>
-                <h3>Qué me diferencia</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
-              </div>
+              <button className="about-carousel-btn" onClick={nextAboutCard}>
+                <i className="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            
+            {/* Dots del carrusel */}
+            <div className="about-carousel-dots">
+              {aboutCards.map((_, index) => (
+                <button
+                  key={index}
+                  className={`about-dot ${index === aboutCardIndex ? 'active' : ''}`}
+                  onClick={() => setAboutCardIndex(index)}
+                />
+              ))}
             </div>
 
             <Link to="/sobre-mi" className="about-me-link">

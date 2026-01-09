@@ -168,8 +168,8 @@
 
 @media (max-width: 768px) {
   .section {
-    min-height: auto;
-    padding: 4rem 1rem;
+    min-height: 100vh;
+    padding: 2rem 1rem;
   }
   
   .section-1 {
@@ -192,7 +192,8 @@
 
 @media (max-width: 480px) {
   .section {
-    padding: 3rem 0.75rem;
+    min-height: 100vh;
+    padding: 1.5rem 0.75rem;
   }
   
   .section-1 {
@@ -301,10 +302,103 @@
   color: #ffffff;
 }
 
+/* Carrusel de about-me para móvil */
+.about-me-carousel {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto 1.5rem;
+}
+
+.about-carousel-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-carousel-wrapper .about-me-card {
+  width: 100%;
+  max-width: 300px;
+  padding: 2rem 1.5rem;
+  min-height: 220px;
+}
+
+.about-carousel-wrapper .about-me-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.about-carousel-wrapper .about-me-card p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.about-carousel-wrapper .about-me-icon {
+  width: 65px;
+  height: 65px;
+  margin-bottom: 1.25rem;
+}
+
+.about-carousel-wrapper .about-me-icon i {
+  font-size: 1.6rem;
+}
+
+.about-carousel-btn {
+  background: none;
+  border: none;
+  color: #A68B82;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.about-carousel-btn:hover {
+  color: #8A706A;
+  transform: scale(1.1);
+}
+
+.about-carousel-dots {
+  display: none;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.about-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #E9DBD8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about-dot.active {
+  background-color: #A68B82;
+  transform: scale(1.2);
+}
+
+.about-dot:hover {
+  background-color: #A68B82;
+}
+
 @media (max-width: 768px) {
   .about-me-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    display: none;
+  }
+  
+  .about-me-carousel {
+    display: flex;
+  }
+  
+  .about-carousel-dots {
+    display: flex;
   }
   
   .about-me-card {
@@ -1045,8 +1139,8 @@
   }
 
   .section-3 {
-    min-height: auto;
-    padding: 3rem 1rem;
+    min-height: 100vh;
+    padding: 2rem 1rem;
   }
   
   .section-3::before {
