@@ -1,0 +1,80 @@
+/* Speaker Page Styles */
+.speaker-page {
+  min-height: calc(100vh - 70px);
+  background-color: #f9f8f7;
+  padding: 3rem 2rem;
+}
+
+.speaker-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.speaker-container h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #0c0c0c;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.speaker-section {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.speaker-section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #0c0c0c;
+  margin-bottom: 1rem;
+}
+
+.speaker-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.speaker-back {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #A68B82;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.speaker-back:hover {
+  color: #0c0c0c;
+}
+
+@media (max-width: 768px) {
+  .speaker-page {
+    padding: 2rem 1rem;
+  }
+
+  .speaker-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .speaker-section {
+    padding: 1.5rem;
+  }
+
+  .speaker-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .speaker-section p {
+    font-size: 1rem;
+  }
+}
+

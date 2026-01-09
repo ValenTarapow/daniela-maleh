@@ -1,0 +1,330 @@
+/* Tratamientos Page Styles */
+.tratamientos-page {
+  min-height: calc(100vh - 70px);
+  background-color: #f9f8f7;
+}
+
+.tratamientos-layout {
+  display: flex;
+  min-height: calc(100vh - 70px);
+}
+
+/* Sidebar */
+.tratamientos-sidebar {
+  width: 300px;
+  background-color: #ffffff;
+  padding: 2rem 1.5rem;
+  border-right: 1px solid #E9DBD8;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 70px;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+
+.tratamientos-sidebar h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0c0c0c;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #E9DBD8;
+}
+
+.tratamientos-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.categoria-group {
+  margin-bottom: 0.5rem;
+}
+
+.categoria-title {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0c0c0c;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.categoria-title:hover {
+  background-color: rgba(233, 219, 216, 0.3);
+  color: #A68B82;
+}
+
+.categoria-title.active {
+  background-color: #A68B82;
+  color: #ffffff;
+}
+
+.tratamientos-subnav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+  padding-left: 0.75rem;
+  border-left: 2px solid #E9DBD8;
+  margin-left: 1rem;
+}
+
+.tratamientos-nav-item {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.tratamientos-nav-item:hover {
+  background-color: rgba(233, 219, 216, 0.3);
+  color: #A68B82;
+}
+
+.tratamientos-nav-item.active {
+  background-color: #E9DBD8;
+  color: #0c0c0c;
+  font-weight: 600;
+}
+
+.tratamientos-back {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid #E9DBD8;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #A68B82;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.tratamientos-back:hover {
+  color: #0c0c0c;
+}
+
+/* Contenido principal */
+.tratamientos-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.tratamientos-content-header {
+  margin-bottom: 1rem;
+}
+
+.tratamientos-categoria-label {
+  display: inline-block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #A68B82;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.tratamientos-content h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0c0c0c;
+  margin-bottom: 0;
+}
+
+.tratamientos-content-body {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.tratamientos-main {
+  flex: 1;
+}
+
+.tratamientos-descripcion {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 1.5rem;
+  white-space: pre-line;
+}
+
+.tratamientos-imagen {
+  max-width: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.tratamientos-imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tratamientos-consulta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem auto 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #25D366;
+  color: #ffffff;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.tratamientos-consulta-btn:hover {
+  background-color: #128C7E;
+  transform: translateY(-2px);
+}
+
+.tratamientos-consulta-btn i {
+  font-size: 1.2rem;
+}
+
+/* Info Sidebar */
+.tratamientos-info-sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.tratamientos-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background-color: #ffffff;
+  padding: 0.85rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #E9DBD8;
+}
+
+.tratamientos-info-item i {
+  font-size: 1rem;
+  color: #A68B82;
+  margin-top: 0.15rem;
+}
+
+.tratamientos-info-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tratamientos-info-item .info-label {
+  font-size: 0.7rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tratamientos-info-item .info-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0c0c0c;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .tratamientos-sidebar {
+    width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tratamientos-layout {
+    flex-direction: column;
+  }
+
+  .tratamientos-sidebar {
+    width: 100%;
+    position: relative;
+    top: 0;
+    height: auto;
+    max-height: 50vh;
+    border-right: none;
+    border-bottom: 1px solid #E9DBD8;
+    padding: 1.5rem 1rem;
+  }
+
+  .tratamientos-sidebar h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .categoria-title {
+    font-size: 1.05rem;
+    padding: 0.6rem 0.75rem;
+  }
+
+  .tratamientos-nav-item {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .tratamientos-subnav {
+    margin-left: 0.75rem;
+    padding-left: 0.5rem;
+  }
+
+  .tratamientos-back {
+    display: none;
+  }
+
+  .tratamientos-content {
+    padding: 2rem 1rem;
+  }
+
+  .tratamientos-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .tratamientos-content-body {
+    flex-direction: column;
+  }
+
+  .tratamientos-info-sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .tratamientos-info-item {
+    flex: 1 1 calc(50% - 0.5rem);
+    min-width: 150px;
+    padding: 1rem;
+  }
+
+  .tratamientos-descripcion {
+    font-size: 1rem;
+  }
+}
