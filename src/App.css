@@ -78,7 +78,7 @@
 
 /* Estilos específicos para cada sección */
 .section-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/5.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/danielaclara.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -166,7 +166,7 @@
 }
 
 .hero-btn-secondary {
-  background-color: rgba(110, 110, 111, 0.65);
+  background-color: rgba(110, 110, 111, 0.9);
   color: #ffffff;
   border: 2px solid #ffffff;
 }
@@ -220,13 +220,40 @@
 }
 
 .section-2 {
-  background: 
-    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-    url('./assets/5 (3).jpg');
+  position: relative;
+  overflow: hidden;
+  color: #0c0c0c;
+}
+
+.section-2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('./assets/speaker5.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #0c0c0c;
+  filter: grayscale(100%);
+  z-index: 0;
+}
+
+.section-2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 1;
+}
+
+.section-2 > * {
+  position: relative;
+  z-index: 2;
 }
 
 /* Sobre mí section styles */
@@ -567,16 +594,43 @@
 }
 
 .section-4 {
-  background: 
-    linear-gradient(to right, 
-      rgba(255, 255, 255, 0.8) 0%, 
-      rgba(255, 255, 255, 0.8) 50%,
-      transparent 50%
-    ),
-    url('./assets/istockphoto-2038457340-612x612 (1).jpg') right center,
-    linear-gradient(135deg, #ffffff 0%, #f9f8f7 100%);
-  background-size: auto, cover, auto;
-  background-repeat: no-repeat, no-repeat, no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('./assets/duederma.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  z-index: 0;
+}
+
+.section-4::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, 
+    rgba(255, 255, 255, 0.9) 0%, 
+    rgba(255, 255, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0.3) 50%
+  );
+  z-index: 1;
+}
+
+.section-4 > * {
+  position: relative;
+  z-index: 2;
   color: #0c0c0c;
   justify-content: center;
   padding-left: 0;
@@ -1143,12 +1197,10 @@
   .section-4 {
     padding-left: 0;
     justify-content: center;
-    background: 
-      linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
-      url('./assets/istockphoto-2038457340-612x612 (1).jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  }
+  
+  .section-4::after {
+    background: rgba(255, 255, 255, 0.85);
   }
   
   .section-4 .section-content {
