@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './Header.css';
+import logoImage from '../assets/logo.svg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,7 +56,7 @@ const Header = () => {
       <div className="header-container">
         {/* Logo */}
         <div className="logo" onClick={goToHome} style={{ cursor: 'pointer' }}>
-          <img src={process.env.PUBLIC_URL + '/logo.svg'} alt="Dra Maleh" className="logo-image" />
+          <img src={logoImage} alt="Dra Maleh" className="logo-image" />
         </div>
 
         {/* Navegación desktop */}
