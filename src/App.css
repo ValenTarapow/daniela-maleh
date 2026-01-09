@@ -156,7 +156,7 @@
 }
 
 .hero-btn-secondary {
-  background-color: transparent;
+  background-color: rgba(110, 110, 111, 0.65);
   color: #ffffff;
   border: 2px solid #ffffff;
 }
