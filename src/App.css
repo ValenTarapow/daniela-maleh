@@ -646,7 +646,7 @@
 /* Section 5 - Speaker */
 .section-5 {
   background: 
-    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+    linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)),
     url('./assets/speaker-bg.png');
   background-size: cover;
   background-position: center;
