@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/daniela-maleh/static/css/main.32442e29.css",
-    "main.js": "/daniela-maleh/static/js/main.fbb710af.js",
+    "main.css": "/daniela-maleh/static/css/main.83367cf3.css",
+    "main.js": "/daniela-maleh/static/js/main.7448c02d.js",
     "static/js/453.5f61f63a.chunk.js": "/daniela-maleh/static/js/453.5f61f63a.chunk.js",
-    "static/media/tratamientos-bg.png": "/daniela-maleh/static/media/tratamientos-bg.a2a7dcef56c4bbe14707.png",
     "static/media/speaker-bg.png": "/daniela-maleh/static/media/speaker-bg.73ca8094a78da11b0afe.png",
+    "static/media/tratamientos-bg.png": "/daniela-maleh/static/media/tratamientos-bg.67a67a5d0666844d25bf.png",
     "static/media/5.jpg": "/daniela-maleh/static/media/5.757356888c32e704ab0a.jpg",
     "static/media/fa-solid-900.woff2": "/daniela-maleh/static/media/fa-solid-900.8ae0d37556ff1e685de2.woff2",
     "static/media/fa-brands-400.woff2": "/daniela-maleh/static/media/fa-brands-400.1c5c7716b05754cb4eab.woff2",
@@ -14,12 +14,12 @@
     "static/media/fa-regular-400.woff2": "/daniela-maleh/static/media/fa-regular-400.6f05ca9ab7b5345dbc07.woff2",
     "static/media/fa-v4compatibility.woff2": "/daniela-maleh/static/media/fa-v4compatibility.e4340c52a50e727c6afa.woff2",
     "index.html": "/daniela-maleh/index.html",
-    "main.32442e29.css.map": "/daniela-maleh/static/css/main.32442e29.css.map",
-    "main.fbb710af.js.map": "/daniela-maleh/static/js/main.fbb710af.js.map",
+    "main.83367cf3.css.map": "/daniela-maleh/static/css/main.83367cf3.css.map",
+    "main.7448c02d.js.map": "/daniela-maleh/static/js/main.7448c02d.js.map",
     "453.5f61f63a.chunk.js.map": "/daniela-maleh/static/js/453.5f61f63a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32442e29.css",
-    "static/js/main.fbb710af.js"
+    "static/css/main.83367cf3.css",
+    "static/js/main.7448c02d.js"
   ]
 }
