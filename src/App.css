@@ -119,6 +119,16 @@
   padding: 0 0.5rem;
 }
 
+.hero-link {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: opacity 0.3s ease;
+}
+
+.hero-link:hover {
+  opacity: 0.8;
+}
+
 .hero-buttons {
   display: flex;
   gap: 1rem;

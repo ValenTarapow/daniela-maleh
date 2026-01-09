@@ -61,7 +61,7 @@ function HomePage() {
           <div className="section-content hero-content">
             <h1>Dra. Daniela Maleh</h1>
             <p className="hero-subtitle">Médica dermatóloga y estética</p>
-            <p className="hero-tagline">Fundadora de Due Derma · Más de {yearsOfExperience} años de trayectoria</p>
+            <p className="hero-tagline">Fundadora de <a href="https://duederma.com.ar/" target="_blank" rel="noopener noreferrer" className="hero-link">Due Derma</a> · Más de {yearsOfExperience} años de trayectoria</p>
             <div className="hero-buttons">
               <button className="hero-btn hero-btn-primary" onClick={() => document.getElementById('treatments').scrollIntoView({ behavior: 'smooth' })}>
                 Ver tratamientos
