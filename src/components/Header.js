@@ -55,7 +55,7 @@ const Header = () => {
       <div className="header-container">
         {/* Logo */}
         <div className="logo" onClick={goToHome} style={{ cursor: 'pointer' }}>
-          <img src="/logo.svg" alt="Dra Maleh" className="logo-image" />
+          <img src={process.env.PUBLIC_URL + '/logo.svg'} alt="Dra Maleh" className="logo-image" />
         </div>
 
         {/* Navegación desktop */}
