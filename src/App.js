@@ -104,7 +104,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 className="treatments-btn treatments-btn-secondary"
               >
-                Ver tratamientos en Due Derma
+                Ver tratamientos en Due Derma <i className="fas fa-arrow-right"></i>
               </a>
             </div>
           </div>

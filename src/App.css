@@ -331,7 +331,7 @@
 
 .section-3 {
   background: 
-    radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.15) 100%),
+    linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
     url('./assets/tratamientos-bg.png');
   background-size: cover;
   background-position: center;
@@ -414,14 +414,24 @@
 }
 
 .treatments-btn-secondary {
-  background-color: transparent;
-  color: #A68B82;
-  border: 2px solid #A68B82;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #7a6660;
+  border: 2px solid #7a6660;
+  gap: 0.5rem;
 }
 
 .treatments-btn-secondary:hover {
   background-color: #A68B82;
   color: #ffffff;
+  border-color: #A68B82;
+}
+
+.treatments-btn-secondary i {
+  transition: transform 0.3s ease;
+}
+
+.treatments-btn-secondary:hover i {
+  transform: translateX(4px);
 }
 
 @media (max-width: 768px) {
