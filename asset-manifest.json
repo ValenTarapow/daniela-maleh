@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/daniela-maleh/static/css/main.80956238.css",
+    "main.css": "/daniela-maleh/static/css/main.9e286c8d.css",
     "main.js": "/daniela-maleh/static/js/main.2710a7dd.js",
     "static/js/453.5f61f63a.chunk.js": "/daniela-maleh/static/js/453.5f61f63a.chunk.js",
     "static/media/speaker-bg.png": "/daniela-maleh/static/media/speaker-bg.73ca8094a78da11b0afe.png",
     "static/media/tratamientos-bg.png": "/daniela-maleh/static/media/tratamientos-bg.67a67a5d0666844d25bf.png",
-    "static/media/5.jpg": "/daniela-maleh/static/media/5.757356888c32e704ab0a.jpg",
+    "static/media/speaker5.png": "/daniela-maleh/static/media/speaker5.290d862408950cbf6d33.png",
+    "static/media/duederma.jpg": "/daniela-maleh/static/media/duederma.a57c2f5a6d703eaf53c1.jpg",
     "static/media/fa-solid-900.woff2": "/daniela-maleh/static/media/fa-solid-900.8ae0d37556ff1e685de2.woff2",
     "static/media/fa-brands-400.woff2": "/daniela-maleh/static/media/fa-brands-400.1c5c7716b05754cb4eab.woff2",
-    "static/media/5 (3).jpg": "/daniela-maleh/static/media/5 (3).ee47f5cf526e4f4f72d5.jpg",
-    "static/media/istockphoto-2038457340-612x612 (1).jpg": "/daniela-maleh/static/media/istockphoto-2038457340-612x612 (1).dc31f781355196c4a6f5.jpg",
+    "static/media/danielaclara.png": "/daniela-maleh/static/media/danielaclara.94c0c5b50e8bc4d595d3.png",
     "static/media/logo.png": "/daniela-maleh/static/media/logo.38837a51bb7cda9cd16d.png",
     "static/media/fa-regular-400.woff2": "/daniela-maleh/static/media/fa-regular-400.6f05ca9ab7b5345dbc07.woff2",
     "static/media/fa-v4compatibility.woff2": "/daniela-maleh/static/media/fa-v4compatibility.e4340c52a50e727c6afa.woff2",
     "index.html": "/daniela-maleh/index.html",
-    "main.80956238.css.map": "/daniela-maleh/static/css/main.80956238.css.map",
+    "main.9e286c8d.css.map": "/daniela-maleh/static/css/main.9e286c8d.css.map",
     "main.2710a7dd.js.map": "/daniela-maleh/static/js/main.2710a7dd.js.map",
     "453.5f61f63a.chunk.js.map": "/daniela-maleh/static/js/453.5f61f63a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.80956238.css",
+    "static/css/main.9e286c8d.css",
     "static/js/main.2710a7dd.js"
   ]
 }
