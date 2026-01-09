@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/daniela-maleh/static/css/main.eb2279b2.css",
+    "main.css": "/daniela-maleh/static/css/main.434cf76a.css",
     "main.js": "/daniela-maleh/static/js/main.73e9b53b.js",
     "static/js/453.5f61f63a.chunk.js": "/daniela-maleh/static/js/453.5f61f63a.chunk.js",
     "static/media/speaker-bg.png": "/daniela-maleh/static/media/speaker-bg.73ca8094a78da11b0afe.png",
@@ -14,12 +14,12 @@
     "static/media/fa-regular-400.woff2": "/daniela-maleh/static/media/fa-regular-400.6f05ca9ab7b5345dbc07.woff2",
     "static/media/fa-v4compatibility.woff2": "/daniela-maleh/static/media/fa-v4compatibility.e4340c52a50e727c6afa.woff2",
     "index.html": "/daniela-maleh/index.html",
-    "main.eb2279b2.css.map": "/daniela-maleh/static/css/main.eb2279b2.css.map",
+    "main.434cf76a.css.map": "/daniela-maleh/static/css/main.434cf76a.css.map",
     "main.73e9b53b.js.map": "/daniela-maleh/static/js/main.73e9b53b.js.map",
     "453.5f61f63a.chunk.js.map": "/daniela-maleh/static/js/453.5f61f63a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb2279b2.css",
+    "static/css/main.434cf76a.css",
     "static/js/main.73e9b53b.js"
   ]
 }
